@@ -58,34 +58,41 @@ public final class R {
         public static final int videos_by_google_icon=0x7f02001b;
     }
     public static final class id {
-        public static final int btn=0x7f070000;
-        public static final int btn2=0x7f070001;
-        public static final int container=0x7f070003;
-        public static final int controllers=0x7f070005;
-        public static final int endText=0x7f07000b;
-        public static final int init_text=0x7f07000a;
-        public static final int iv=0x7f070010;
-        public static final int layout=0x7f07000d;
-        public static final int number=0x7f070012;
-        public static final int password=0x7f070014;
-        public static final int play_pause_description=0x7f070008;
-        public static final int playpause=0x7f070007;
-        public static final int progressBar=0x7f070006;
-        public static final int rv=0x7f07000e;
-        public static final int rv2=0x7f07000f;
-        public static final int seekBar=0x7f07000c;
-        public static final int startText=0x7f070009;
-        public static final int tv=0x7f070011;
-        public static final int username=0x7f070013;
-        public static final int videoView=0x7f070004;
-        public static final int viewStub=0x7f070002;
+        public static final int btn=0x7f070002;
+        public static final int btn2=0x7f070003;
+        public static final int btn3=0x7f070004;
+        public static final int btn4=0x7f070005;
+        public static final int container=0x7f070007;
+        public static final int controllers=0x7f070009;
+        public static final int endText=0x7f07000f;
+        public static final int hor_scrollview=0x7f070000;
+        public static final int init_text=0x7f07000e;
+        public static final int iv=0x7f070015;
+        public static final int layout=0x7f070001;
+        public static final int number=0x7f070017;
+        public static final int password=0x7f070019;
+        public static final int play_pause_description=0x7f07000c;
+        public static final int playpause=0x7f07000b;
+        public static final int progressBar=0x7f07000a;
+        public static final int read=0x7f070013;
+        public static final int rv=0x7f070011;
+        public static final int rv2=0x7f070012;
+        public static final int seekBar=0x7f070010;
+        public static final int startText=0x7f07000d;
+        public static final int tv=0x7f070016;
+        public static final int username=0x7f070018;
+        public static final int videoView=0x7f070008;
+        public static final int viewStub=0x7f070006;
+        public static final int write=0x7f070014;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_player=0x7f030001;
-        public static final int activity_recycler=0x7f030002;
-        public static final int item_recycleradapter=0x7f030003;
-        public static final int item_viewstub=0x7f030004;
+        public static final int activity_horizontiallistview=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int activity_player=0x7f030002;
+        public static final int activity_recycler=0x7f030003;
+        public static final int activity_xmlparse_main=0x7f030004;
+        public static final int item_recycleradapter=0x7f030005;
+        public static final int item_viewstub=0x7f030006;
     }
     public static final class string {
         public static final int about_app=0x7f05000d;

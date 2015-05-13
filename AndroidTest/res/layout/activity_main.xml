@@ -19,6 +19,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="show new view" />
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xml parser" />
+      <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="horizontial_listview" />
 
     <TextView
         android:layout_width="match_parent"

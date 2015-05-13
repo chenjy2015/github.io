@@ -12,7 +12,7 @@ import android.widget.EditText;
 
 public class MainActivity extends Activity implements OnClickListener{
 
-	Button btn,btn2;
+	Button btn,btn2,btn3,btn4;
 	ViewStub vs;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,10 @@ public class MainActivity extends Activity implements OnClickListener{
 		btn.setOnClickListener(this);
 		btn2 = (Button) findViewById(R.id.btn2);
 		btn2.setOnClickListener(this);
+		btn3 = (Button) findViewById(R.id.btn3);
+		btn3.setOnClickListener(this);
+		btn4 = (Button) findViewById(R.id.btn4);
+		btn4.setOnClickListener(this);
 	}
 	
 	
@@ -30,10 +34,10 @@ public class MainActivity extends Activity implements OnClickListener{
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
-		case R.id.btn://ÏÔÊ¾Òþ²ØµÄViewStub 
+		case R.id.btn://ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Øµï¿½ViewStub 
 			
 			if(vs != null){
-				View inflatedView  = vs.inflate();//¶¯Ì¬¼ÓÔØxmlÖÐÒÑÉè¶¨ºÃµÄ²¼¾Ö
+				View inflatedView  = vs.inflate();//ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½xmlï¿½ï¿½ï¿½ï¿½ï¿½è¶¨ï¿½ÃµÄ²ï¿½ï¿½ï¿½
 				EditText mEditNum = (EditText) inflatedView.findViewById(R.id.number);
 				EditText mEditUserName = (EditText) inflatedView.findViewById(R.id.username);
 				EditText mEditPassWord = (EditText) inflatedView.findViewById(R.id.password);
@@ -44,6 +48,13 @@ public class MainActivity extends Activity implements OnClickListener{
 			Intent intent = new Intent();
 			intent.setClass(getApplicationContext(), RecyclerViewActivity.class);
 			startActivity(intent);
+			break;
+			
+		case R.id.btn3:
+			startActivity(new Intent(getApplicationContext(), XMLParseActivity.class));
+			break;
+		case R.id.btn4:
+			startActivity(new Intent(getApplicationContext(), HorizontialListViewActivity.class));
 			break;
 		}
 	}
