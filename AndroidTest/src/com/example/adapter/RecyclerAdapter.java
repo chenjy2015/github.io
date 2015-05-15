@@ -4,8 +4,6 @@ import com.example.activity.R;
 import com.example.appliction.AndroidTestApplication;
 import com.example.appliction.Common;
 import com.nostra13.universalimageloader.core.ImageLoader;
-
-import android.annotation.SuppressLint;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.util.SparseArray;
@@ -15,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-@SuppressLint("NewApi")
+
 public class RecyclerAdapter extends
 		RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
 

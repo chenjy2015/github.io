@@ -33,7 +33,7 @@
             android:screenOrientation="sensor" >
         </activity>
         <activity
-            android:name=".HorizontialListViewActivity"
+            android:name=".HorizontalScrollViewActivity"
             android:screenOrientation="sensor" >
         </activity>
     </application>

@@ -54,7 +54,7 @@ public class MainActivity extends Activity implements OnClickListener{
 			startActivity(new Intent(getApplicationContext(), XMLParseActivity.class));
 			break;
 		case R.id.btn4:
-			startActivity(new Intent(getApplicationContext(), HorizontialListViewActivity.class));
+			startActivity(new Intent(getApplicationContext(), HorizontalScrollViewActivity.class));
 			break;
 		}
 	}
