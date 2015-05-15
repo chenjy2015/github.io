@@ -56,15 +56,17 @@ public final class R {
         public static final int p07=0x7f020019;
         public static final int p08=0x7f02001a;
         public static final int p09=0x7f02001b;
-        public static final int player_bg_gradient_dark=0x7f02001c;
-        public static final int scrubber_disabled=0x7f02001d;
-        public static final int scrubber_focussed=0x7f02001e;
-        public static final int scrubber_normal=0x7f02001f;
-        public static final int scrubber_pressed=0x7f020020;
-        public static final int shadow7=0x7f020021;
-        public static final int star_icon=0x7f020022;
-        public static final int videos_by_google_banner=0x7f020023;
-        public static final int videos_by_google_icon=0x7f020024;
+        public static final int p10=0x7f02001c;
+        public static final int p11=0x7f02001d;
+        public static final int player_bg_gradient_dark=0x7f02001e;
+        public static final int scrubber_disabled=0x7f02001f;
+        public static final int scrubber_focussed=0x7f020020;
+        public static final int scrubber_normal=0x7f020021;
+        public static final int scrubber_pressed=0x7f020022;
+        public static final int shadow7=0x7f020023;
+        public static final int star_icon=0x7f020024;
+        public static final int videos_by_google_banner=0x7f020025;
+        public static final int videos_by_google_icon=0x7f020026;
     }
     public static final class id {
         public static final int btn=0x7f070005;
