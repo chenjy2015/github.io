@@ -8,11 +8,13 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 
 import com.example.adapter.HorizontalScrollViewAdapter;
 import com.example.view.MyHorizontalScrollView;
 import com.example.view.MyHorizontalScrollView.CurrentImageChangeListener;
 import com.example.view.MyHorizontalScrollView.OnItemClickListener;
+import com.example.view.ScaleImageView;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 public class HorizontalScrollViewActivity extends Activity {
@@ -25,13 +27,13 @@ public class HorizontalScrollViewActivity extends Activity {
 	
 	private MyHorizontalScrollView mHorizontalScrollView;
 	private HorizontalScrollViewAdapter mAdapter;
-	private ImageView mImg;
+	private ScaleImageView mImg;
 	private static final String LOADER_BY_INT_RESOURCE = "drawable://";
 
 	private ArrayList<Integer> mDatas = new ArrayList<Integer>(Arrays.asList(
 			R.drawable.p01, R.drawable.p02, R.drawable.p03, R.drawable.p04,
 			R.drawable.p05, R.drawable.p06, R.drawable.p07, R.drawable.p08,
-			R.drawable.p09));
+			R.drawable.p09,R.drawable.p10,R.drawable.p11));
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +41,7 @@ public class HorizontalScrollViewActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_horizontalscrollview);
 
-		mImg = (ImageView) findViewById(R.id.id_content);
+		mImg = (ScaleImageView) findViewById(R.id.id_content);
 		mHorizontalScrollView = (MyHorizontalScrollView) findViewById(R.id.id_horizontalScrollView);
 		mAdapter = new HorizontalScrollViewAdapter(this, mDatas);
 		// 添加滚动回调
@@ -64,6 +66,14 @@ public class HorizontalScrollViewActivity extends Activity {
 		});
 		// 设置适配器
 		mHorizontalScrollView.initDatas(mAdapter);
+		setCurrentIndex(5);
+	}
+	
+	//scrollview滑动到第几个元素
+	public void setCurrentIndex(int count){
+		int width = mHorizontalScrollView.getChildWidth();
+		mHorizontalScrollView.fullScroll(ScrollView.FOCUS_RIGHT);
+		mHorizontalScrollView.smoothScrollBy(width, 0);
 	}
 
 	

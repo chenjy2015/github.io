@@ -5,8 +5,6 @@ import java.util.List;
 import com.example.activity.R;
 import com.example.util.ImageLoaderUtils;
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.sun.imageio.plugins.common.ImageUtil;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

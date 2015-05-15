@@ -88,6 +88,14 @@ public class MyHorizontalScrollView extends HorizontalScrollView implements
 	 * 屏幕的宽度
 	 */
 	private int mScreenWitdh;
+	
+	
+	
+	//设置当前屏幕展示第几张图片
+	public void setCurrentIndex(int index){
+		mCurrentIndex = index;
+		initFirstScreenChildren(mCurrentIndex);
+	}
 
 	/**
 	 * 保存View与位置的键值对
@@ -135,8 +143,8 @@ public class MyHorizontalScrollView extends HorizontalScrollView implements
 		if (mListener != null) {
 			notifyCurrentImgChanged();
 		}
-
 	}
+	
 
 	/**
 	 * 加载前一张图片
@@ -219,6 +227,11 @@ public class MyHorizontalScrollView extends HorizontalScrollView implements
 		initFirstScreenChildren(mCountOneScreen);
 	}
 
+	//获取子元素的宽度
+	public int getChildWidth(){
+		return mChildWidth + 2;
+	}
+	
 	/**
 	 * 加载第一屏的View
 	 * 
