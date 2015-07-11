@@ -36,6 +36,19 @@
             android:name=".HorizontalScrollViewActivity"
             android:screenOrientation="sensor" >
         </activity>
+        <activity
+            android:name=".AlarmActivity"
+            android:screenOrientation="sensor" >
+        </activity>
+        
+
+        <receiver
+            android:name="com.example.service.MyAlarmBroadCast"
+            android:exported="false" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.intent.alarmservice" />
+            </intent-filter>
+        </receiver>
     </application>
 
     <uses-feature

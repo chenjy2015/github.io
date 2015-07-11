@@ -12,7 +12,7 @@ import android.widget.EditText;
 
 public class MainActivity extends Activity implements OnClickListener{
 
-	Button btn,btn2,btn3,btn4;
+	Button btn,btn2,btn3,btn4,btn5;
 	ViewStub vs;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,8 @@ public class MainActivity extends Activity implements OnClickListener{
 		btn3.setOnClickListener(this);
 		btn4 = (Button) findViewById(R.id.btn4);
 		btn4.setOnClickListener(this);
+		btn5 = (Button) findViewById(R.id.btn5);
+		btn5.setOnClickListener(this);
 	}
 	
 	
@@ -55,6 +57,9 @@ public class MainActivity extends Activity implements OnClickListener{
 			break;
 		case R.id.btn4:
 			startActivity(new Intent(getApplicationContext(), HorizontalScrollViewActivity.class));
+			break;
+		case R.id.btn5:
+			startActivity(new Intent(getApplicationContext(), AlarmActivity.class));
 			break;
 		}
 	}
