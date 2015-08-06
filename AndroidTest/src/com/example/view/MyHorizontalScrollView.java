@@ -1,8 +1,9 @@
 package com.example.view;
 
 /**
- * 自定义的MyHorizontalScrollView类
- * @author Administrator
+ * 自定义横向滑动
+ * Scrollview与listView结合
+ * 注意：因为Adapter需要引用Item的高度或宽度计算 所以Adapter的Item的控件要有固定值
  *
  */
 import java.util.HashMap;

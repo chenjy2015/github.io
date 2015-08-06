@@ -14,7 +14,7 @@ import com.example.adapter.HorizontalScrollViewAdapter;
 import com.example.view.MyHorizontalScrollView;
 import com.example.view.MyHorizontalScrollView.CurrentImageChangeListener;
 import com.example.view.MyHorizontalScrollView.OnItemClickListener;
-import com.example.view.ScaleImageView;
+import com.example.view.zoomimage.ImageViewTouch;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 public class HorizontalScrollViewActivity extends Activity {
@@ -27,7 +27,7 @@ public class HorizontalScrollViewActivity extends Activity {
 	
 	private MyHorizontalScrollView mHorizontalScrollView;
 	private HorizontalScrollViewAdapter mAdapter;
-	private ScaleImageView mImg;
+	private ImageViewTouch mImg;
 	private static final String LOADER_BY_INT_RESOURCE = "drawable://";
 
 	private ArrayList<Integer> mDatas = new ArrayList<Integer>(Arrays.asList(
@@ -41,7 +41,7 @@ public class HorizontalScrollViewActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_horizontalscrollview);
 
-		mImg = (ScaleImageView) findViewById(R.id.id_content);
+		mImg = (ImageViewTouch) findViewById(R.id.id_content);
 		mHorizontalScrollView = (MyHorizontalScrollView) findViewById(R.id.id_horizontalScrollView);
 		mAdapter = new HorizontalScrollViewAdapter(this, mDatas);
 		// 添加滚动回调

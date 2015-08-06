@@ -1,4 +1,4 @@
-package com.example.util.zoomimage;
+package com.example.view.zoomimage;
 
 public interface IDisposable {
 

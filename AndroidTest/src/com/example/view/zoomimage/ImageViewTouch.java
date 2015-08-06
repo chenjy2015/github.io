@@ -1,4 +1,4 @@
-package com.example.util.zoomimage;
+package com.example.view.zoomimage;
 
 import android.annotation.TargetApi;
 import android.content.Context;
