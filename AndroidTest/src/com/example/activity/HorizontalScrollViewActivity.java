@@ -30,10 +30,13 @@ public class HorizontalScrollViewActivity extends Activity {
 	private ImageViewTouch mImg;
 	private static final String LOADER_BY_INT_RESOURCE = "drawable://";
 
+//	private ArrayList<Integer> mDatas = new ArrayList<Integer>(Arrays.asList(
+//			R.drawable.p01, R.drawable.p02, R.drawable.p03, R.drawable.p04,
+//			R.drawable.p05, R.drawable.p06, R.drawable.p07, R.drawable.p08,
+//			R.drawable.p09,R.drawable.p10,R.drawable.p11));
+	//实验代码
 	private ArrayList<Integer> mDatas = new ArrayList<Integer>(Arrays.asList(
-			R.drawable.p01, R.drawable.p02, R.drawable.p03, R.drawable.p04,
-			R.drawable.p05, R.drawable.p06, R.drawable.p07, R.drawable.p08,
-			R.drawable.p09,R.drawable.p10,R.drawable.p11));
+			R.drawable.p01));
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

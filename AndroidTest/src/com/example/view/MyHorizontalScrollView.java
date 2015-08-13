@@ -89,11 +89,9 @@ public class MyHorizontalScrollView extends HorizontalScrollView implements
 	 * 屏幕的宽度
 	 */
 	private int mScreenWitdh;
-	
-	
-	
-	//设置当前屏幕展示第几张图片
-	public void setCurrentIndex(int index){
+
+	// 设置当前屏幕展示第几张图片
+	public void setCurrentIndex(int index) {
 		mCurrentIndex = index;
 		initFirstScreenChildren(mCurrentIndex);
 	}
@@ -145,7 +143,6 @@ public class MyHorizontalScrollView extends HorizontalScrollView implements
 			notifyCurrentImgChanged();
 		}
 	}
-	
 
 	/**
 	 * 加载前一张图片
@@ -228,13 +225,14 @@ public class MyHorizontalScrollView extends HorizontalScrollView implements
 		initFirstScreenChildren(mCountOneScreen);
 	}
 
-	//获取子元素的宽度
-	public int getChildWidth(){
+	// 获取子元素的宽度
+	public int getChildWidth() {
 		return mChildWidth + 2;
 	}
-	
+
 	/**
-	 * 加载第一屏的View
+	 * 加载第一屏的View 
+	 * 
 	 * 
 	 * @param mCountOneScreen
 	 */
@@ -243,7 +241,9 @@ public class MyHorizontalScrollView extends HorizontalScrollView implements
 		mContainer.removeAllViews();
 		mViewPos.clear();
 
-		for (int i = 0; i < mCountOneScreen; i++) {
+		//i<mAdapter.getCount()这一步判断必须加上
+		//在Item只有一两个不满足整个屏幕长度的时候mCountOneScreen大于mAdapter.getCount()
+		for (int i = 0; i < mCountOneScreen && i < mAdapter.getCount(); i++) {
 			View view = mAdapter.getView(i, null, mContainer);
 			view.setOnClickListener(this);
 			mContainer.addView(view);
