@@ -14,7 +14,7 @@ import java.io.IOException;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Environment;
-import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
+//import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
 import com.nostra13.universalimageloader.cache.disc.naming.HashCodeFileNameGenerator;
 import com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -92,7 +92,7 @@ public class Init {
 				.memoryCache(new LruMemoryCache(2 * 1024 * 1024))
 				.memoryCacheSize(2 * 1024 * 1024)
 				.memoryCacheSizePercentage(13)
-				.diskCache(new UnlimitedDiscCache(getFile())) // 指定缓存路径
+//				.diskCache(new UnlimitedDiscCache(getFile())) // 指定缓存路径
 				.diskCacheSize(50 * 1024 * 1024).diskCacheFileCount(100)
 				.diskCacheFileNameGenerator(new HashCodeFileNameGenerator()) // default
 				.imageDownloader(new BaseImageDownloader(context)) // default
