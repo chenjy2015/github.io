@@ -35,7 +35,7 @@ public class AlarmActivity extends Activity implements OnClickListener{
 		switch (v.getId()) {
 		case R.id.single:
 			AlarmUtils.getInstance(AlarmActivity.this).alarmClock(
-					"提醒时间到 5秒钟到了!", 1000 * 5);
+					"提醒时间到 5秒钟到了!", 1000 * 5 );
 			break;
 
 		case R.id.repeat:
