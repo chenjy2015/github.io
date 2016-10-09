@@ -64,6 +64,7 @@ public class XMLParseActivity extends Activity {
 			}
 		});
 
+
 		write.setOnClickListener(new View.OnClickListener() {
 
 			@Override
